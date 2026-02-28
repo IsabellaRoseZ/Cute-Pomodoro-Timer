@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cute Pomodoro Timer 🍅</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍅 Pomodoro Timer</h1>
+
+    <div class="mode">
+      <button id="workBtn" class="active">Work</button>
+      <button id="breakBtn">Break</button>
+    </div>
+
+    <div class="timer">
+      <svg width="220" height="220">
+        <circle cx="110" cy="110" r="100" class="bg-circle"/>
+        <circle cx="110" cy="110" r="100" class="progress-circle" id="progressCircle"/>
+      </svg>
+      <div id="time">25:00</div>
+    </div>
+
+    <div class="controls">
+      <button id="startPause">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <p id="message">You’ve got this 💪✨</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
